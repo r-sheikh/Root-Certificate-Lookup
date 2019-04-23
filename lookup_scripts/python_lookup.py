@@ -95,7 +95,7 @@ if (length > 1):
     if(length > 2):
         filename = str(sys.argv[2])
 else:
-    print('Usage: python {0} <host name> [<filename>]\n'.format(str(sys.argv[0])))
+    print('Usage: python3 {0} <host name> [<filename>]\n'.format(str(sys.argv[0])))
     print('Provide file names without extensions.')
     print('Roots will be enumerated starting from zero with a .der extension.')
     print('Default filename is ''root_cert''.')
