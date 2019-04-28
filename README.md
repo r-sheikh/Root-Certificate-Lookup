@@ -2,6 +2,13 @@
 
 This repo provides bash and python scripts that use OpenSSL libraries/modules to fetch the root certificates that would be used to verify a certificate chain presented by a given server during a TLS handshake. It is targeted for use in IoT applications where it is often difficult to find the appropriate certificates to use, especially if the library implementing the TLS protocol takes a minimalistic aproach to certificate chain verification.
 
+#### Installation Requirements:
+* __bash_lookup.sh__: 
+   * This script requires the bash shell and openssl both of which come installed on most Unix systems.
+* __python_lookup.sh__:
+   * This script requires python3 and the packages pyopenssl and ssl. The ssl package shoud ship with python3. The pyopenssl package can be installed with the package manager pip3 that ships with the python3 installation by default. It can be installed with the following commmand:
+   ```pip3 install pyopenssl```
+
 #### Folder Contents:
 * __example_outputs:__ contains folders that demonstrate the scripts' outputs for both the python and bash script with a couple of different servers.
 * __lookup_scripts:__ contains the bash and python scripts that can be used for root certificate lookup.
